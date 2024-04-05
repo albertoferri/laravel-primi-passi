@@ -13,9 +13,11 @@
     <div class="container">
         <div class="row my-5">
             <div class="col">
-                <h1>LARAVEL</h1>
+                <h1 class="text-danger text-center mb-3">LARAVEL</h1>
+                <p class="text-center">
+                    {{ $hello }} <br> {{ $hello2 }}
+                </p>
 
-                {{ $hello }} <br> {{ $hello2 }}
             
             </div>
         </div>

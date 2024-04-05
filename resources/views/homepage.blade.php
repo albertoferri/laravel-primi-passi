@@ -26,9 +26,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('pagina3') }}">Pagina 3</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('pagina4') }}">Pagina 4</a>
-                            </li>
                         </ul>
                     </div>
                 </div>

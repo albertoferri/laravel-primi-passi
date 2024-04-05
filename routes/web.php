@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homepage');
-});
+})->name('home');
 
 Route::get('/pagina1', function () {
 
@@ -28,14 +28,28 @@ Route::get('/pagina1', function () {
 
 Route::get('/pagina2', function () {
 
-    
-    return view('pagina2');
+    $studente = [
+        "nome" => "Alberto",
+        "cognome" => "Ferri",
+        "eta" => 24,
+        "corsi" => ["Boolean", "Full-Stack Developer"]
+    ];
+
+    class Auto {
+        public $marca;
+        public $modello;
+
+        public function __construct($marca, $modello) {
+            $this->marca = $marca;
+            $this->modello = $modello;
+        }
+    }
+
+    $auto = new Auto("Lamborghini", "Urus");
+
+    return view('pagina2', compact("studente", "auto"));
 })->name('pagina2');
 
 Route::get('/pagina3', function () {
     return view('pagina3');
 })->name('pagina3');
-
-Route::get('/pagina4', function () {
-    return view('pagina4');
-})->name('pagina4');
