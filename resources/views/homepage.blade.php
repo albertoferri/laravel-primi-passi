@@ -14,7 +14,11 @@
         <div class="row my-5">
             <h1>LARAVEL</h1>
 
-            
+            <div>
+
+                {{ $hello }} <br> {{ $hello2 }}
+
+            </div>
         </div>
     </div>
 
