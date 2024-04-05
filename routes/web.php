@@ -51,5 +51,8 @@ Route::get('/pagina2', function () {
 })->name('pagina2');
 
 Route::get('/pagina3', function () {
-    return view('pagina3');
+
+    $img= 'https://pbs.twimg.com/media/GDBnNQvWcAAiGaD.jpg';
+
+    return view('pagina3', compact('img'));
 })->name('pagina3');

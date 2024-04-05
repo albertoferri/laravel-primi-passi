@@ -13,6 +13,24 @@
     <div class="container">
         <div class="row my-5">
             <h1 class="text-danger text-center mb-3">LARAVEL</h1>
+            <nav class="navbar bg-danger navbar-expand-lg navbar-dark text-uppercase fw-bold mb-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ route('home') }}">Home</a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('pagina1') }}">Pagina 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('pagina2') }}">Pagina 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('pagina3') }}">Pagina 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <div class="col-4 offset-4">
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">

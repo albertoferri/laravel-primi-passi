@@ -12,7 +12,8 @@
     
     <div class="container">
         <div class="row my-5">
-            <nav class="navbar bg-primary navbar-expand-lg navbar-dark text-uppercase fw-bold mb-5">
+            <h1 class="text-danger text-center mb-3">LARAVEL</h1>
+            <nav class="navbar bg-danger navbar-expand-lg navbar-dark text-uppercase fw-bold mb-5">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('home') }}">Home</a>
                     <div class="collapse navbar-collapse" id="navbarNav">
